@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "website"
+  navbar:
+    title: false # change this to false!
+    logo: file/path/to/logo.png
+    logo-alt: "Alt text for logo"
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - projects.qmd
+    right: 
+      - icon: twitter
+        href: https://twitter.com/eavigano
+      - icon: envelope
+        aria-label: email
+        href: "mailto:edoardovigano@gmail.com"  
+
+format:
+  html:
+    theme: lumen
+    css: styles.css
+    toc: true
+    page-layout: full
+
+editor: visual
+

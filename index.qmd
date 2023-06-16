@@ -1,0 +1,40 @@
+---
+title: Edoardo Alberto Viganò
+image: profile.jpg
+about:
+  template: trestles
+  image-width: 20em
+  image-shape: round
+links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/eavigano
+    - icon: github
+      text: Github
+      href: https://github.com/eavigano
+    # - icon: linkedin
+    #   text: LinkedIn
+    #   href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
+    - icon: envelope
+      text: Email
+      href: "mailto:edoardovigano@gmail.com"  
+---
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+
+## Education
+**PhD candidate in Political Science**
+
+Aarhus University 
+November 2020 -. present
+
+Macalester College | St. Paul MA
+B.A in Economics | Sept 2007 - June 2011
+
+## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Spet 2012 - April 2018
+
+
+Welcome to my website. I am a PhD candidate at the Department of Political Science, Aarhus University. 
