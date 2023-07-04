@@ -1,32 +1,29 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "website"
+  title: "Edoardo A. Viganò"
   navbar:
-    title: false # change this to false!
-    logo: file/path/to/logo.png
-    logo-alt: "Alt text for logo"
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - projects.qmd
-    right: 
-      - icon: twitter
-        href: https://twitter.com/eavigano
-      - icon: envelope
-        aria-label: email
-        href: "mailto:edoardovigano@gmail.com"  
+      - href: cv.qmd
+        text: CV
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+      - href: personal.qmd
+        text: Personal
+    website:
+  #google-analytics: "UA-XXXXXXXX"
 
 format:
   html:
     theme: lumen
     css: styles.css
     toc: true
-    page-layout: full
 
 editor: visual
-
-# just for the commit
 

@@ -1,40 +1,49 @@
 ---
-title: Edoardo Alberto Viganò
-image: profile.jpg
+title: "Edoardo Alberto Viganò"
+subtitle: "PhD candidate"
+
 about:
+  id: main-part
   template: trestles
-  image-width: 20em
+  image: profile.jpg
   image-shape: round
-links:
+  image-width: 17em
+  links:
+    - icon: envelope
+      text: Email
+      href: "mailto:eavigano@ps.au.dk"
     - icon: twitter
       text: Twitter
       href: https://twitter.com/eavigano
-    - icon: github
-      text: Github
-      href: https://github.com/eavigano
-    # - icon: linkedin
-    #   text: LinkedIn
-    #   href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
-    - icon: envelope
-      text: Email
-      href: "mailto:edoardovigano@gmail.com"  
+    # - icon: github
+    #   text: Github
+    #   href: https://github.com/eavigano
+    - icon: book
+      text: Scholar
+      href: https://scholar.google.it/citations?user=Bx2za7MAAAAJ&hl=da&oi=ao
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/eavigano/
+    
 ---
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+
+::: {#main-part}
+Welcome! I am a PhD candidate at Aarhus University, Department of Political Science.
+
+In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems.
+
+You can contact me at [eavigano@ps.au.dk](mailto:eavigano@ps.au.dk). My CV can be downloaded [here](cv.pdf).
+
 
 ## Education
-**PhD candidate in Political Science**
 
-Aarhus University 
-November 2020 -. present
+**PhD candidate in Political Science** <br> *Aarhus University* <br> November 2020 -- present
 
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
+**MSc in Economics and Political Science** <br> *University of Milan* <br> 2019
 
-## Experience
+**BA in Political Sciences** <br> *University of Milan* <br> 2017
+:::
 
-Wengo Analytics | Head Data Scientist | April 2018 - present
+## Publications
 
-GeoScynce | Chief Analyst | Spet 2012 - April 2018
-
-
-Welcome to my website. I am a PhD candidate at the Department of Political Science, Aarhus University. 
+**Viganò**, E.A. (2023) “Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform.” *Legislative Studies Quarterly*. [Online first](https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418).

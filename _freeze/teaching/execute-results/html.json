@@ -1,0 +1,14 @@
+{
+  "hash": "901c4244eac1c5520492535227e286ae",
+  "result": {
+    "markdown": "---\ntitle: \"Teaching\"\nexecute:\n  freeze: true  # never re-render during project render\nengine: knitr \nresources:\n  - \"electoral_systems.pdf\"\ncv:\n  pdf: \"electoral_systems.pdf\"\n---\n\n\nI have experience teaching courses both at the bachelor and at the master's level at Aarhus University.\n\n- MA course: [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (course convenor and lecturer). [Syllabus](electoral_systems.pdf).\n\n- BA course:  [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (teaching assistant)\n\nI have also experience supervising students in individual seminars, where they are asked to produce a long essay.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

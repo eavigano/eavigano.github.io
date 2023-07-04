@@ -1,0 +1,16 @@
+rl4real:
+    title: "Real-world Video Adaptation with Reinforcement Learning"
+    authors:
+        - Hongzi Mao
+        - Shannon Chen
+        - me
+        - Shaun Singh
+        - Drew Blaisdell
+        - Yuandong Tian
+        - Mohammad Alizadeh
+        - Eytan Bakshy
+    year: 2019
+    preprint: https://openreview.net/forum?id=SJlCkwN8iV
+    published_url:
+    venue: ICML Workshop - RL4RealLife
+    github:
