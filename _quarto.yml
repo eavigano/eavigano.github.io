@@ -17,7 +17,7 @@ website:
       - href: personal.qmd
         text: Personal
     website:
-  #google-analytics: "UA-XXXXXXXX"
+  google-analytics: "G-V76XCX9MG0"
 
 format:
   html:
