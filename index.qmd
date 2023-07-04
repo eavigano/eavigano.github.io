@@ -24,7 +24,7 @@ about:
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/eavigano/
-    
+      # test
 ---
 
 ::: {#main-part}
@@ -32,8 +32,7 @@ Welcome! I am a PhD candidate at Aarhus University, Department of Political Scie
 
 In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems.
 
-You can contact me at [eavigano@ps.au.dk](mailto:eavigano@ps.au.dk). My CV can be downloaded [here](cv.pdf).
-
+You can contact me at [eavigano\@ps.au.dk](mailto:eavigano@ps.au.dk). My CV can be downloaded [here](cv.pdf).
 
 ## Education
 
@@ -46,4 +45,4 @@ You can contact me at [eavigano@ps.au.dk](mailto:eavigano@ps.au.dk). My CV can b
 
 ## Publications
 
-**Viganò**, E.A. (2023) “Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform.” *Legislative Studies Quarterly*. [Online first](https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418).
+**Viganò**, E.A. (2023) "Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform." *Legislative Studies Quarterly*. [Online first](https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418).
