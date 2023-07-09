@@ -30,7 +30,7 @@ about:
 ::: {#main-part}
 Welcome! I am a PhD candidate at Aarhus University, Department of Political Science.
 
-In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems.
+In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems. Methodologically, I am interested in quantitative text analysis and causal inference.
 
 You can contact me at [eavigano\@ps.au.dk](mailto:eavigano@ps.au.dk). My CV can be downloaded [here](cv.pdf).
 
