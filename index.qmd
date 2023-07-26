@@ -26,6 +26,15 @@ about:
       href: https://www.linkedin.com/in/eavigano/
       # test
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V76XCX9MG0');
+</script>
 
 ::: {#main-part}
 Welcome! I am a PhD candidate at Aarhus University, Department of Political Science.
