@@ -26,8 +26,13 @@ about:
       href: https://www.linkedin.com/in/eavigano/
       # test
 ---
+
 <!-- Google tag (gtag.js) -->
+
+```{=html}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script>
+```
+```{=html}
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,17 +40,17 @@ about:
 
   gtag('config', 'G-V76XCX9MG0');
 </script>
-
+```
 ::: {#main-part}
-Welcome! I am a PhD candidate at Aarhus University, Department of Political Science.
+Welcome! I am a Post-Doctoral researcher at the Department of Philosophy, Politics, and Economics at the University of Witten/Herdecke. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
 
 In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems. Methodologically, I am interested in quantitative text analysis and causal inference.
 
-You can contact me at [eavigano\@ps.au.dk](mailto:eavigano@ps.au.dk). My CV can be downloaded [here](cv.pdf).
+You can contact me at [edoardo.vigano\@uni-wh.de](mailto:edoardo.vigano@uni-wh.de). My CV can be downloaded [here](cv.pdf).
 
 ## Education
 
-**PhD candidate in Political Science** <br> *Aarhus University* <br> November 2020 -- present
+**PhD candidate in Political Science** <br> *Aarhus University* <br> November 2020 -- October 2023
 
 **MSc in Economics and Political Science** <br> *University of Milan* <br> 2019
 

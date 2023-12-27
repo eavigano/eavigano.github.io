@@ -3,10 +3,11 @@ title: "Personal"
 ---
 
 ## Music and books
+
 Check out my latest listenings and reads on [rateyourmusic](https://rateyourmusic.com/~edoalb) and [goodreads](https://www.goodreads.com/user/show/124872083-edoardo).
 
-
 ## Football
-I’m an [Inter Milan](https://www.inter.it/en) and [Virtus Entella](https://www.entella.it/) supporter.
 
-<span style="display:inline-block; width: 40px;"></span> <img src="inter.svg" width="100"/> <span style="display:inline-block; width: 15px;"></span> <img src="entella.svg" width="100"/>
+I'm an [Inter Milan](https://www.inter.it/en) and [Virtus Entella](https://www.entella.it/) supporter.
+
+<img src="inter.svg" width="100"/> <img src="entella.svg" width="100"/>
