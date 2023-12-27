@@ -1,6 +1,6 @@
 ---
 title: "Edoardo Alberto Viganò"
-subtitle: "PhD candidate"
+subtitle: "Postdoctoral researcher in political science"
 
 about:
   id: main-part
@@ -42,7 +42,7 @@ about:
 </script>
 ```
 ::: {#main-part}
-Welcome! I am a Post-Doctoral researcher at the Department of Philosophy, Politics, and Economics at the University of Witten/Herdecke. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
+Welcome! I am a postdoctoral researcher at the Department of Philosophy, Politics, and Economics at the University of Witten/Herdecke. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
 
 In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems. Methodologically, I am interested in quantitative text analysis and causal inference.
 
