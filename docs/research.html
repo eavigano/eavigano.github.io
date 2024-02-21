@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Edoardo A. Viganò - Research</title>
+<title>Edoardo A. Viganò - Papers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./icon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,6 +62,91 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-unpublished-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-author','listing-date','listing-status',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-author","listing-date","listing-status"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-unpublished-papers'] = new List('listing-unpublished-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-forthcoming-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-forthcoming-papers'] = new List('listing-forthcoming-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-published-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-date','listing-year','listing-pdf','listing-pubclosed','listing-journal','listing-dataverse','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-date","listing-year","listing-pdf","listing-pubclosed","listing-journal","listing-dataverse","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-published-papers'] = new List('listing-published-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script>
 
 <script type="text/javascript">
@@ -70,11 +157,13 @@ gtag('js', new Date());
 gtag('config', 'G-V76XCX9MG0', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -122,22 +211,13 @@ gtag('config', 'G-V76XCX9MG0', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#published-papers" id="toc-published-papers" class="nav-link active" data-scroll-target="#published-papers">Published papers</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Papers</h1>
 </div>
 
 
@@ -152,19 +232,119 @@ gtag('config', 'G-V76XCX9MG0', { 'anonymize_ip': true});
 
 </header>
 
-<section id="published-papers" class="level2">
-<h2 class="anchored" data-anchor-id="published-papers">Published papers</h2>
-<p><strong>Viganò</strong>, E.A. (2023) “Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform.” <em>Legislative Studies Quarterly</em>. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418">Online first</a>.</p>
-</section>
+<p>If want to stay up-to-date on my work, follow me on <a href="https://scholar.google.com/citations?user=Bx2za7MAAAAJ&amp;hl=en">Google Scholar</a>.</p>
 <section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
-<p><strong>Viganò</strong>, E.A. (2023) “Geographical Representation and Re‑Election Prospects in Party‑Centred Contexts”.</p>
-<p><strong>Viganò</strong>, E.A. (2023) “Geographical Representation on the Floor: How Parliamentary Rules Shape Legislative Speeches”.</p>
+<h2 class="anchored" data-anchor-id="working-papers">Working Papers</h2>
+<div id="listing-unpublished-papers" class="quarto-listing quarto-listing-container-custom">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+<ul class="list">
+    <li data-index="0" data-listing-date-sort="1707951600000">
+      Geographical Representation on the Floor: How Parliamentary Rules Shape Legislative Speeches 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+        <small class="text-muted">
+          Feb 15, 2024. Edoardo A. Viganò. Under review.
+        </small>
+      <!-- paper info for published papers -->
+      <br>
+      <br>
+      </p>
+      <hr>
+    </li>
+    <li data-index="1" data-listing-date-sort="1702594800000">
+      Geographical Representation and Re-Election Prospects in PArt-Centred Contexts 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+        <small class="text-muted">
+          Dec 15, 2023. Edoardo A. Viganò. Under review.
+        </small>
+      <!-- paper info for published papers -->
+      <br>
+      <br>
+      </p>
+      <hr>
+    </li>
+</ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="published-papers" class="level2">
+<h2 class="anchored" data-anchor-id="published-papers">Published Papers</h2>
+<div id="listing-published-papers" class="quarto-listing quarto-listing-container-custom">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+<ul class="list">
+    <li data-index="0" data-listing-date-sort="1678662000000">
+      Electoral Incentives and Geographical Representation: Evidence from Italy 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+      <!-- paper info for published papers -->
+        <small class="text-muted">
+          2023. Edoardo A. Viganò. <em>Legislative Studies Quarterly</em>.
+        </small>
+      <br>
+        <a role="button" href="../papers/quadrants.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
+        </a> 
+        <a role="button" href="https://doi.org/10.1111/lsq.12418" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
+        </a>
+        <a role="button" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
+        </a>
+      <br>
+      </p>
+      <hr>
+    </li>
+</ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-custom" id="listing-forthcoming-papers">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+<ul class="list">
+</ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
