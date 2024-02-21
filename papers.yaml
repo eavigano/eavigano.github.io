@@ -20,7 +20,7 @@
   type: "Published"
   date: 2023-03-13
   year: 2023
-  pdf: "../papers/quadrants.pdf"
+  pdf: "/papers/lsq1.pdf"
   pubclosed: "https://doi.org/10.1111/lsq.12418"
   journal: "<em>Legislative Studies Quarterly</em>"
   dataverse: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX"
