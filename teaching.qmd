@@ -4,14 +4,14 @@ execute:
   freeze: true  # never re-render during project render
 engine: knitr 
 resources:
-  - "electoral_systems.pdf"
+  - "teaching/electoral_systems.pdf"
 cv:
-  pdf: "electoral_systems.pdf"
+  pdf: "teaching/electoral_systems.pdf"
 ---
 
 I have experience teaching courses both at the bachelor and at the master's level at Aarhus University.
 
--   MA course: [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (course convenor and lecturer). [Syllabus](electoral_systems.pdf).
+-   MA course: [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (course convenor and lecturer). [Syllabus](teaching/electoral_systems.pdf).
 
 -   BA course: [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (teaching assistant).
 
