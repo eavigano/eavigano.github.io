@@ -11,10 +11,13 @@ about:
   links:
     - icon: envelope
       text: Email
-      href: "mailto:eavigano@ps.au.dk"
+      href: "mailto:edoardo.vigano@uni-wh.de"
     - icon: twitter
       text: Twitter
       href: https://twitter.com/eavigano
+    - icon: "<i class='fa fa-bsky-icon'></i>"
+      text: Bluesky
+      href: https://bsky.app/profile/eavigano.bsky.social
     # - icon: github
     #   text: Github
     #   href: https://github.com/eavigano
@@ -24,7 +27,7 @@ about:
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/eavigano/
-      # test
+      
 ---
 
 <!-- Google tag (gtag.js) -->
