@@ -1,9 +1,32 @@
+- title: "Electoral Incentives and Spatial Concentration in Legislative Activities"
+  type: "Working"
+  author:
+    - Edoardo A. Viganò
+  date: 2024-11-10
+  status: '<span style="font-weight: bold;">In progress</span>'
+  
+  
+- title: "Close to Home: The Impact of Local Politicians on Turnout"
+  type: "Working"
+  author:
+    - Edoardo A. Viganò
+  date: 2024-11-10
+  status: '<span style="font-weight: bold;">In progress</span>'
+
+
+- title: "Introducing the Archive of Interwar Europe Election Data & Assemblies (AIEEDA)"
+  type: "Working"
+  author:
+    - With <a href="https://leakaftan.eu/">Lea Kaftan</a>, Bruno Della Sala, Olga Jerjomina, Stefan Stojkovic, and <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>
+  date: 2024-11-10
+  status: '<span style="font-weight: bold;">Under review</span>'
+
 - title: "Political Violence and Anti-System Voting in Interwar Italy"
   type: "Working"
   author:
     - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>, Bruno Della Sala, Stefan Stojkovic 
-  date: 2024-02-28
-  status: "Under review"
+  date: 2024-11-01
+  status: '<span style="font-weight: bold;">Revise and resubmit</span>'
 
 
 - title: "Geographical Representation on the Floor: How Parliamentary Rules Shape Legislative Speeches"
@@ -11,14 +34,16 @@
   author:
     - Edoardo A. Viganò 
   date: 2024-02-20
-  status: "Working paper"
+  status: '<span style="font-weight: bold;">Working paper</span>'
 
 
 - title: "Geographical Representation and Re-Election Prospects in Party-Centred Contexts"
-  type: "Working"
+  type: "Published"
   author:
     - Edoardo A. Viganò 
   date: 2023-12-15
+  year: 2024
+  journal: "Accepted at <strong><em>Journal of Elections, Public Opinion and Parties</em></strong>"
   status: "Under review"
   
 - title: "Electoral Incentives and Geographical Representation: Evidence from Italy"
@@ -27,9 +52,7 @@
   year: 2023
   pdf: "/papers/lsq1.pdf"
   pubclosed: "https://doi.org/10.1111/lsq.12418"
-  journal: "<em>Legislative Studies Quarterly</em>"
+  journal: "<strong><em>Legislative Studies Quarterly</em></strong>"
   dataverse: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX"
   author: 
   - Edoardo A. Viganò 
-
-  
