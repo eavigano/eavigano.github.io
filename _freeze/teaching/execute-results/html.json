@@ -1,10 +1,9 @@
 {
-  "hash": "467effe3e67503e30dff7b267b3166f9",
+  "hash": "bec3bd8adf062e89a6eedd73dac18330",
   "result": {
-    "markdown": "---\ntitle: \"Teaching\"\nexecute:\n  freeze: true  # never re-render during project render\nengine: knitr \nresources:\n  - \"teaching/electoral_systems.pdf\"\ncv:\n  pdf: \"teaching/electoral_systems.pdf\"\n---\n\n\nI have experience teaching courses both at the bachelor and at the master's level at Aarhus University.\n\n-   MA course: [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (course convenor and lecturer). [Syllabus](teaching/electoral_systems.pdf).\n\n-   BA course: [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (teaching assistant).\n\nI have also experience supervising students in individual seminars.\n",
-    "supporting": [
-      "teaching_files"
-    ],
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Teaching\"\nexecute:\n  freeze: true  # never re-render during project render\nengine: knitr \nresources:\n  - \"teaching/electoral_systems.pdf\"\ncv:\n  pdf: \"teaching/electoral_systems.pdf\"\n---\n\n\n\n\nI have experience teaching courses both at the bachelor and master's level at Aarhus University, Heinrich Heine University, and the University of Milan.\n\n-   [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (MA course, Aarhus; course convenor and lecturer). [Syllabus](teaching/electoral_systems.pdf).\n\n-   Electoral Systems and Representation (BA course, HHU; course convenor and lecturer).\n\n-   Positive Political Theory (MSc course, Milan; teaching assistant).\n\n-   [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (Aarhus, teaching assistant)\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

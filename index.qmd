@@ -27,7 +27,6 @@ about:
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/eavigano/
-      
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -35,6 +34,7 @@ about:
 ```{=html}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script>
 ```
+
 ```{=html}
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -44,6 +44,7 @@ about:
   gtag('config', 'G-V76XCX9MG0');
 </script>
 ```
+
 ::: {#main-part}
 Welcome! I am a postdoctoral researcher at the Department of Philosophy, Politics, and Economics at Witten/Herdecke University. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
 
@@ -60,8 +61,8 @@ You can contact me at [edoardo.vigano\@uni-wh.de](mailto:edoardo.vigano@uni-wh.d
 **BA in Political Sciences** <br> *University of Milan* <br> 2017
 :::
 
-## Publications
+<!-- ## Publications -->
 
-**Viganò**, E.A. (2024) "Geographical Representation and Re-Election Prospects in Party-Centred Contexts". Accepted at *Journal of Elections, Public Opinion and Parties*.
+<!-- **Viganò**, E.A. (2024) "Geographical Representation and Re-Election Prospects in Party-Centred Contexts". Accepted at *Journal of Elections, Public Opinion and Parties*. -->
 
-**Viganò**, E.A. (2023) "Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform". *Legislative Studies Quarterly*  | [Paper](https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418).
+<!-- **Viganò**, E.A. (2023) "Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform". *Legislative Studies Quarterly* \| [Paper](https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418). -->
