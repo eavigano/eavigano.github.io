@@ -1,46 +1,18 @@
-- title: "Electoral Incentives and Spatial Concentration in Legislative Activities"
-  type: "Working"
-  author:
-    - Edoardo A. Viganò
-  date: 2024-11-10
-  status: '<span style="font-weight: bold;">In progress</span>'
-  
-  
-- title: "Close to Home: The Impact of Local Politicians on Turnout"
-  type: "Working"
-  author:
-    - Edoardo A. Viganò
-  date: 2024-11-10
-  status: '<span style="font-weight: bold;">In progress</span>'
-
-
 - title: "Introducing the Archive of Interwar Europe Election Data & Assemblies (AIEEDA)"
-  type: "Working"
+  type: "Published"
   author:
     - With <a href="https://leakaftan.eu/">Lea Kaftan</a>, Bruno Della Sala, Olga Jerjomina, Stefan Stojkovic, and <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>
-  date: 2024-11-10
-  status: '<span style="font-weight: bold;">Under review</span>'
-
-- title: "Political Violence and Anti-System Voting in Interwar Italy"
-  type: "Working"
-  author:
-    - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>, Bruno Della Sala, Stefan Stojkovic 
-  date: 2024-11-01
-  status: '<span style="font-weight: bold;">Revise and resubmit</span>'
-
-
-- title: "Geographical Representation on the Floor: How Parliamentary Rules Shape Legislative Speeches"
-  type: "Working"
-  author:
-    - Edoardo A. Viganò 
-  date: 2024-02-20
-  status: '<span style="font-weight: bold;">Working paper</span>'
-
-
+  year: 2025
+  date: 2025-04-15
+  pdf: "/papers/sd1.pdf"
+  pubclosed: "https://doi.org/10.1038/s41597-025-04969-y"
+  journal: "<strong><em>Scientific Data</em></strong>"
+  
 - title: "Geographical Representation and Re-Election Prospects in Party-Centred Contexts"
   type: "Published"
   author:
     - Edoardo A. Viganò 
+  date: 2025-02-15
   year: 2025
   pdf: "/papers/jepop1.pdf"
   pubclosed: "https://doi.org/10.1080/17457289.2024.2443679"
@@ -54,5 +26,52 @@
   pubclosed: "https://doi.org/10.1111/lsq.12418"
   journal: "<strong><em>Legislative Studies Quarterly</em></strong>"
   dataverse: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX"
-  author: 
-  - Edoardo A. Viganò 
+  author:
+  - Edoardo A. Viganò
+
+
+- title: "Political Violence and Anti-System Voting in Interwar Italy"
+  type: "Working"
+  author:
+    - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>, Bruno Della Sala, Stefan Stojkovic 
+  date: 2025-04-10
+  status: '<span style="font-weight: bold;">Revise and resubmit</span>'
+
+- title: "Geographical Representation on the Floor: How Parliamentary Rules Shape Legislative Speeches"
+  type: "Working"
+  author:
+     - Edoardo A. Viganò 
+  date: 2025-04-15
+  status: '<span style="font-weight: bold;">Revise and resubmit</span>'
+  
+- title: "Parliamentary Speeches and Re-Election Incentives"
+  type: "Working"
+  author:
+    - With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani
+  date: 2025-04-10
+  status: '<span style="font-weight: bold;">Working paper</span>'
+  
+- title: "Close to Home: The Impact of Local Politicians on Turnout"
+  type: "Working"
+  author:
+    - Edoardo A. Viganò
+  date: 2024-11-10
+  status: '<span style="font-weight: bold;">In progress</span>'
+
+- title: "Electoral Incentives and Spatial Concentration in Legislative Activities"
+  type: "Working"
+  author:
+    - Edoardo A. Viganò
+  date: 2024-11-10
+  status: '<span style="font-weight: bold;">In progress</span>'
+  
+  
+
+
+
+
+
+
+
+
+
