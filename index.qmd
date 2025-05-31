@@ -31,19 +31,19 @@ about:
 
 <!-- Google tag (gtag.js) -->
 
-```{=html}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script>
-```
+<!-- ```{=html} -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script> -->
+<!-- ``` -->
 
-```{=html}
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- ```{=html} -->
+<!-- <script> -->
+<!--   window.dataLayer = window.dataLayer || []; -->
+<!--   function gtag(){dataLayer.push(arguments);} -->
+<!--   gtag('js', new Date()); -->
 
-  gtag('config', 'G-V76XCX9MG0');
-</script>
-```
+<!--   gtag('config', 'G-V76XCX9MG0'); -->
+<!-- </script> -->
+<!-- ``` -->
 
 ::: {#main-part}
 Welcome! I am a postdoctoral researcher at the Department of Philosophy, Politics, and Economics at Witten/Herdecke University. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
