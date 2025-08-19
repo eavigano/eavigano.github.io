@@ -1,4 +1,14 @@
 # Published
+- title: "“Geographical Representation on the Floor: Parliamentary Rules and Legislative Speeches in
+Party‑Centred Contexts"
+  type: "Published"
+  author:
+     - Edoardo A. Viganò 
+  year: 2025
+  pdf: "/papers/lsq2.pdf"
+  journal: "Accepted at <strong><em>Legislative Studies Quarterly</em></strong>"
+  date: 2025-08-18
+
 - title: "Political Violence and Anti-System Voting in Interwar Italy"
   type: "Published"
   author:
@@ -42,12 +52,14 @@
 
 
 # Unider review
-- title: "Geographical Representation on the Floor: How Parliamentary Rules Shape Legislative Speeches"
+- title: "Reduced Incentives, Reduced Party Unity:
+Evidence from Parliamentary Speeches"
   type: "Working"
   author:
-     - Edoardo A. Viganò 
-  date: 2025-05-15
-  status: '<span style="font-weight: bold;">Revise and resubmit</span>'
+    - With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani
+  date: 2025-08-01
+  status: '<span style="font-weight: bold;">Under review</span>'
+
 
 # Working papers
 - title: "Close to Home: The Impact of Local Politicians on Turnout"
@@ -57,13 +69,6 @@
   date: 2025-05-10
   status: '<span style="font-weight: bold;">Working paper</span>'
   
-- title: "Parliamentary Speeches and Re-Election Incentives"
-  type: "Working"
-  author:
-    - With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani
-  date: 2025-04-10
-  status: '<span style="font-weight: bold;">Working paper</span>'
-
 - title: "Historical Conflict Event Data Collection via Large Language Models (LLMs)"
   type: "Working"
   author:
