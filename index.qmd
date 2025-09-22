@@ -11,7 +11,7 @@ about:
   links:
     - icon: envelope
       text: Email
-      href: "mailto:edoardo.vigano@uni-wh.de"
+      href: "mailto:eaviganoac@gmail.com"
     - icon: twitter
       text: Twitter
       href: https://twitter.com/eavigano
@@ -48,9 +48,9 @@ about:
 ::: {#main-part}
 Welcome! I am a postdoctoral researcher at the Department of Philosophy, Politics, and Economics at Witten/Herdecke University. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
 
-In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, and electoral systems. Methodologically, I am interested in quantitative text analysis and causal inference.
+In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities. My research interests include parliaments, party politics, electoral systems, and political violence. Methodologically, I am interested in quantitative text analysis and causal inference.
 
-You can contact me at [edoardo.vigano\@uni-wh.de](mailto:edoardo.vigano@uni-wh.de). My CV can be downloaded [here](cv.pdf).
+You can contact me at [eaviganoac\@gmail.com](mailto:eaviganoac@gmail.com). My CV can be downloaded [here](cv.pdf).
 
 ## Education
 

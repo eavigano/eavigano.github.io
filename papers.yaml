@@ -1,12 +1,14 @@
 # Published
-- title: "“Geographical Representation on the Floor: Parliamentary Rules and Legislative Speeches in
+- title: "Geographical Representation on the Floor: Parliamentary Rules and Legislative Speeches in
 Party‑Centred Contexts"
   type: "Published"
   author:
      - Edoardo A. Viganò 
   year: 2025
   pdf: "/papers/lsq2.pdf"
-  journal: "Accepted at <strong><em>Legislative Studies Quarterly</em></strong>"
+  pubclosed: "https://onlinelibrary.wiley.com/doi/10.1111/lsq.70032"
+  journal: "<strong><em>Legislative Studies Quarterly</em></strong>"
+  dataverse: "https://doi.org/10.7910/DVN/D0GFHY"
   date: 2025-08-18
 
 - title: "Political Violence and Anti-System Voting in Interwar Italy"
@@ -15,8 +17,10 @@ Party‑Centred Contexts"
     - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>, Bruno Della Sala, Stefan Stojkovic 
   year: 2025
   date: 2025-05-10
-  pdf: "https://osf.io/preprints/socarxiv/w8y96_v1?view_only="
-  journal: "Accepted at <strong><em>Journalof Peace Research</em></strong>"
+  pdf: "/papers/jpr1.pdf"
+  pubclosed: "https://journals.sagepub.com/doi/10.1177/00223433251347763"
+  journal: "<strong><em>Journal of Peace Research</em></strong>"
+  dataverse: "https://cdn.cloud.prio.org/files/a5810729-81dd-499a-9a3c-26070e468f88/ViganoDellaSalaStojkovicBormann_ReplicationFiles.zip"
 
 - title: "Introducing the Archive of Interwar Europe Election Data & Assemblies (AIEEDA)"
   type: "Published"
