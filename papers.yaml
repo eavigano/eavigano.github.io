@@ -55,13 +55,13 @@ Party‑Centred Contexts"
   - Edoardo A. Viganò
 
 
-# Unider review
+# Under review
 - title: "Reduced Incentives, Reduced Party Unity:
 Evidence from Parliamentary Speeches"
   type: "Working"
   author:
     - With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani
-  date: 2025-08-01
+  date: 2025-11-13
   status: '<span style="font-weight: bold;">Under review</span>'
 
 
@@ -70,21 +70,54 @@ Evidence from Parliamentary Speeches"
   type: "Working"
   author:
     - Edoardo A. Viganò
-  date: 2025-05-10
-  status: '<span style="font-weight: bold;">Working paper</span>'
+  date: 2025-11-13
+  status: '<span style="font-weight: bold;">Under review</span>'
   
 - title: "Historical Conflict Event Data Collection via Large Language Models (LLMs)"
   type: "Working"
   author:
     - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a> and Martin Grauduszus
-  date: 2025-04-02
-  status: '<span style="font-weight: bold;">In progress</span>'
+  date: 2025-11-13
+  status: '<span style="font-weight: bold;">Working paper</span>'
+
+# Worling papers
 
 - title: "Political Violence and Anti-System Voting in the Weimar Republic"
   type: "Working"
   author:
     - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>
-  date: 2025-04-01
+  date: 2025-11-12
+  status: '<span style="font-weight: bold;">In progress</span>'
+  
+- title: "Who Speaks in Committees? Legislative Speech beyond the Floor"
+  type: "Working"
+  author:
+    - With Paolo Gambacciani
+  date: 2025-11-04
+  status: '<span style="font-weight: bold;">In progress</span>'
+  
+  
+- title: "Artificial Intelligence and Parliaments: Rethinking the Relationship between Representation and Participation"
+  type: "Working"
+  author:
+    - With Paolo Gambacciani
+  date: 2025-11-04
+  status: '<span style="font-weight: bold;">In progress</span>'
+
+
+- title: "The Urban-Rural Divide in Populist Rhetoric"
+  type: "Working"
+  author:
+    - With <a href="https://davidycliao.github.io/">Yen-Chieh Liao</a>
+  date: 2025-11-10
+  status: '<span style="font-weight: bold;">In progress</span>'
+  
+
+- title: "A Woman From Here: Gender, Local Roots, and Voter Mobilisation"
+  type: "Working"
+  author:
+    - Edoardo A. Viganò
+  date: 2025-11-11
   status: '<span style="font-weight: bold;">In progress</span>'
 
 
