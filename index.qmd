@@ -1,6 +1,6 @@
 ---
 title: "Edoardo Alberto Viganò"
-subtitle: "Postdoctoral researcher in political science"
+#subtitle: "Postdoctoral researcher in political science"
 
 about:
   id: main-part
@@ -46,10 +46,9 @@ about:
 ```
 
 ::: {#main-part}
-Welcome! I am a postdoctoral researcher at the Department of Philosophy, Politics, and Economics at Witten/Herdecke University. Previously, I was a PhD candidate at Aarhus University, Department of Political Science.
+Welcome! I am a visiting professor in quantitative methods at the Department of Social Sciences at the University Carlos III of Madrid. Previously, I was a postdoctoral researcher at Witten/Herdecke University and a PhD candidate at Aarhus University.
 
-My research interests include representation, electoral systems, party politics, and political violence. Methodologically, I am interested in causal inference and quantitative text analysis.
-<!-- In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities.  -->
+My research interests include representation, electoral systems, party politics, and political violence. Methodologically, I am interested in causal inference and quantitative text analysis. <!-- In my dissertation, I study the determinants and the consequences of legislators' efforts to represent local constituents through parliamentary activities.  -->
 
 You can contact me at [eaviganoac\@gmail.com](mailto:eaviganoac@gmail.com). My CV can be downloaded [here](cv.pdf).
 
