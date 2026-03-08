@@ -33,12 +33,14 @@ toc: false
 #page-layout: full
 ---
 
+## Published papers
+
+::: {#published-papers}
+:::
+
 ## Working papers
 
 ::: {#unpublished-papers}
 :::
 
-## Published papers
 
-::: {#published-papers}
-:::

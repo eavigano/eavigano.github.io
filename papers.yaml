@@ -53,16 +53,22 @@ Party‑Centred Contexts"
   dataverse: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX"
   author:
   - Edoardo A. Viganò
+  
 
-
-# Under review
 - title: "Reduced Incentives, Reduced Party Unity:
 Evidence from Parliamentary Speeches"
-  type: "Working"
+  type: "Published"
   author:
     - With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani
   date: 2025-11-13
-  status: '<span style="font-weight: bold;">Under review</span>'
+  year: 2026
+  pdf: "/papers/pp1.pdf"
+  pubclosed: "https://doi.org/10.1177/13540688261427363"
+  journal: "<strong><em>Party Politics</em></strong>"
+
+
+# Under review
+
 
 
 # Working papers
