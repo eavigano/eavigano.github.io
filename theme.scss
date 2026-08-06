@@ -1,0 +1,630 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+
+// ---------------------------------------------------------------
+// Palette
+//
+// These Sass variables feed Bootstrap's own generated output (body,
+// navbar, footer, link defaults). Rules written by hand further down use
+// the CSS custom properties defined in the rules section instead — see the
+// note there for why.
+// ---------------------------------------------------------------
+$ink:          #1c2024 !default;
+$ink-muted:    #5b6570 !default;
+$ink-faint:    #8a939d !default;
+$accent:       #14556b !default;
+$rule:         #e4e8eb !default;
+$surface:      #f6f8f9 !default;
+
+$body-bg:      #ffffff !default;
+$body-color:   $ink !default;
+$primary:      $accent !default;
+$border-color: $rule !default;
+
+$link-color:       $accent !default;
+$link-hover-color: #0c3d4e !default;
+$link-decoration:  none !default;
+
+// ---------------------------------------------------------------
+// Typography
+// ---------------------------------------------------------------
+$font-family-sans-serif: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: "Source Serif 4", Georgia, Cambria, "Times New Roman", serif !default;
+
+$font-size-root:   18px !default;
+$line-height-base: 1.65 !default;
+
+$headings-font-family: $font-family-serif !default;
+$headings-font-weight: 600 !default;
+$headings-color:       $ink !default;
+$headings-line-height: 1.22 !default;
+
+$h1-font-size: 2.15rem !default;
+$h2-font-size: 1.45rem !default;
+$h3-font-size: 1.15rem !default;
+
+// ---------------------------------------------------------------
+// Chrome
+// ---------------------------------------------------------------
+$navbar-bg: #ffffff !default;
+$navbar-fg: $ink-muted !default;
+$navbar-hl: $accent !default;
+
+$footer-bg: #ffffff !default;
+$footer-fg: $ink-muted !default;
+
+$toc-color:         $ink-muted !default;
+$toc-active-border: $accent !default;
+
+// Quarto's default body column is 800px; at an 18px root that leaves the
+// two-column home page with a ~42-character measure. 880px brings running
+// text back into the comfortable 60-70 character band.
+$grid-body-width: 880px !default;
+
+/*-- scss:rules --*/
+
+// ---------------------------------------------------------------
+// Scheme-scoped palette
+//
+// Quarto keeps BOTH compiled bundles live in the page and switches schemes
+// by toggling body classes at runtime. That means any hand-written rule
+// whose colour comes from a Sass variable is emitted twice — once per
+// bundle, with different values and identical specificity — and which copy
+// wins depends on stylesheet order rather than the active scheme. The
+// result is colours from the wrong scheme leaking through after a toggle.
+//
+// Resolving colour through custom properties keyed off the body class
+// removes the ambiguity: the blocks below are literal, so both bundles emit
+// them identically and there is nothing to conflict over.
+// ---------------------------------------------------------------
+:root,
+body.quarto-light {
+  --site-ink: #1c2024;
+  --site-ink-muted: #5b6570;
+  --site-ink-faint: #8a939d;
+  --site-accent: #14556b;
+  --site-accent-hover: #0c3d4e;
+  --site-rule: #e4e8eb;
+  --site-surface: #f6f8f9;
+  --site-accent-line: rgba(20, 85, 107, 0.32);
+  --site-accent-wash: rgba(20, 85, 107, 0.04);
+  --site-accent-edge: rgba(20, 85, 107, 0.45);
+  --site-selection: rgba(20, 85, 107, 0.16);
+  --site-muted-line: rgba(91, 101, 112, 0.3);
+  --site-portrait-shadow: 0 1px 3px rgba(0, 0, 0, 0.09), 0 8px 26px rgba(0, 0, 0, 0.07);
+  --site-on-accent: #ffffff;
+}
+
+body.quarto-dark {
+  --site-ink: #dde2e6;
+  --site-ink-muted: #98a2ac;
+  --site-ink-faint: #79838d;
+  --site-accent: #7cc0d6;
+  --site-accent-hover: #a9dcec;
+  --site-rule: #2b3138;
+  --site-surface: #1e2227;
+  --site-accent-line: rgba(124, 192, 214, 0.34);
+  --site-accent-wash: rgba(124, 192, 214, 0.08);
+  --site-accent-edge: rgba(124, 192, 214, 0.5);
+  --site-selection: rgba(124, 192, 214, 0.24);
+  --site-muted-line: rgba(152, 162, 172, 0.35);
+  --site-portrait-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 8px 26px rgba(0, 0, 0, 0.4);
+  --site-on-accent: #10262e;
+}
+
+// ---------------------------------------------------------------
+// Base
+// ---------------------------------------------------------------
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--site-selection);
+}
+
+// Comfortable measure (~70 characters) for running prose.
+main.content {
+  p,
+  ul:not(.paper-links):not(.navbar-nav):not(.paper-list),
+  ol,
+  blockquote {
+    max-width: 38rem;
+  }
+}
+
+// ---------------------------------------------------------------
+// Headings
+// ---------------------------------------------------------------
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.011em;
+}
+
+main.content {
+  h2 {
+    margin-top: 2.6rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--site-rule);
+    color: var(--site-ink);
+  }
+
+  h3 {
+    margin-top: 1.9rem;
+    margin-bottom: 0.6rem;
+    color: var(--site-ink);
+  }
+
+  h2 + .quarto-listing {
+    margin-top: 0;
+  }
+}
+
+// ---------------------------------------------------------------
+// Links — underline on hover only, so dense pages stay calm
+// ---------------------------------------------------------------
+main.content a:not(.btn):not(.about-link):not(.paper-link):not(.anchorjs-link):not(.cv-download):not(.more-link) {
+  color: var(--site-accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--site-accent-line);
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    color: var(--site-accent-hover);
+    border-bottom-color: var(--site-accent);
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+// ---------------------------------------------------------------
+// Navbar
+// ---------------------------------------------------------------
+.navbar {
+  border-bottom: 1px solid var(--site-rule);
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  box-shadow: none;
+
+  .navbar-brand,
+  .navbar-title {
+    font-family: $font-family-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    color: var(--site-ink);
+  }
+
+  .navbar-nav {
+    gap: 0.15rem;
+  }
+
+  .nav-link {
+    font-size: 0.83rem;
+    font-weight: 600;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+    color: var(--site-ink-muted);
+    position: relative;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--site-accent);
+    }
+
+    &.active {
+      color: var(--site-ink);
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0.7rem;
+        right: 0.7rem;
+        bottom: 0.1rem;
+        height: 2px;
+        background: var(--site-accent);
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------
+// Title block
+// ---------------------------------------------------------------
+#title-block-header {
+  .quarto-title h1.title {
+    margin-bottom: 0.25rem;
+    color: var(--site-ink);
+  }
+
+  .quarto-title-meta {
+    color: var(--site-ink-muted);
+  }
+}
+
+// ---------------------------------------------------------------
+// Home page (about / trestles)
+//
+// The doubled class raises specificity above Quarto's own trestles rules,
+// which are emitted later in the same compiled bundle. Without it the
+// portrait column keeps its default `flex: 0 0 42%` and squeezes the text.
+// ---------------------------------------------------------------
+.quarto-about-trestles.quarto-about-trestles {
+  gap: 3rem;
+  padding-top: 1rem;
+
+  // Pinned rather than `auto`: the column would otherwise size to the
+  // widest child (the social-link row), not to the portrait.
+  .about-entity {
+    flex: 0 0 290px;
+    max-width: 290px;
+    padding-top: 0.5rem;
+
+    .about-image {
+      box-shadow: var(--site-portrait-shadow);
+    }
+  }
+
+  .about-contents {
+    flex: 1 1 auto;
+    padding-right: 0;
+
+    main.content,
+    p {
+      max-width: 40rem;
+    }
+
+    #title-block-header .quarto-title h1.title,
+    h1.title {
+      font-size: 2.3rem;
+      margin-bottom: 0.9rem;
+    }
+
+    h2 {
+      margin-top: 2.2rem;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0;
+      border-bottom: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: $font-family-sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--site-ink-muted);
+    }
+  }
+}
+
+// Social links: quiet pills that wrap into a centred block under the
+// portrait. Quarto's own rule is `div.quarto-about-trestles .about-entity
+// .about-links` and stacks them one per row at full width, so this has to
+// match that specificity to win.
+div.quarto-about-trestles .about-entity .about-links.about-links {
+  gap: 0.4rem !important;
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  padding-bottom: 0;
+
+  .about-link {
+    color: var(--site-ink-muted);
+    border: 1px solid var(--site-rule);
+    border-radius: 999px;
+    // Sized so all five pills settle into two balanced rows (3 + 2)
+    // within the 290px portrait column.
+    padding: 0.24rem 0.55rem;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    background: transparent;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: var(--site-accent);
+      border-color: var(--site-accent-edge);
+      background: var(--site-accent-wash);
+    }
+
+    i,
+    svg {
+      margin-right: 0.28rem;
+      vertical-align: -0.1em;
+    }
+
+    .about-link-text {
+      margin-left: 0;
+    }
+  }
+}
+
+// Education reads as a compact list, not prose.
+.education-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+
+  li {
+    margin-bottom: 0.55rem;
+    line-height: 1.45;
+    color: var(--site-ink);
+  }
+
+  .degree {
+    font-weight: 600;
+  }
+
+  .institution,
+  .year {
+    color: var(--site-ink-muted);
+  }
+
+  .year {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+// ---------------------------------------------------------------
+// Publications listing
+// ---------------------------------------------------------------
+.paper-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  max-width: 42rem;
+}
+
+.paper {
+  padding: 0 0 1.55rem 0;
+  margin-bottom: 1.55rem;
+  border-bottom: 1px solid var(--site-rule);
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.paper-title {
+  font-family: $font-family-serif;
+  font-size: 1.09rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  color: var(--site-ink);
+  margin-bottom: 0.3rem;
+}
+
+.paper-meta {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--site-ink-muted);
+
+  .paper-journal {
+    color: var(--site-ink);
+
+    // papers.yaml wraps journal names in <strong><em>; italic alone carries
+    // the convention without shouting on every line.
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: var(--site-ink-muted);
+    border-bottom: 1px solid var(--site-muted-line);
+
+    &:hover {
+      color: var(--site-accent);
+      border-bottom-color: var(--site-accent);
+    }
+  }
+}
+
+.paper-status {
+  font-weight: 600;
+  color: var(--site-ink);
+}
+
+// Resource links: quiet inline row, dot-separated.
+.paper-links {
+  margin-top: 0.55rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.1rem 0.55rem;
+  font-size: 0.84rem;
+
+  .paper-link {
+    color: var(--site-accent);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s ease;
+
+    i {
+      margin-right: 0.2rem;
+      font-size: 0.95em;
+      vertical-align: -0.05em;
+    }
+
+    &:hover {
+      color: var(--site-accent-hover);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+}
+
+// Decorative separator only — never carries meaning, so the faint tone is
+// acceptable here even though it sits below the 4.5:1 AA threshold.
+.paper-link-sep {
+  color: var(--site-ink-faint);
+  user-select: none;
+}
+
+.paper-note {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--site-ink-muted);
+}
+
+// "All publications →" style jump link.
+.more-link {
+  display: inline-block;
+  margin-top: 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--site-accent);
+  border-bottom: none !important;
+
+  &:hover {
+    color: var(--site-accent-hover);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// ---------------------------------------------------------------
+// CV page
+// ---------------------------------------------------------------
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.4rem;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--site-accent);
+  color: var(--site-on-accent) !important;
+  border: 1px solid var(--site-accent);
+  border-radius: 4px;
+  padding: 0.42rem 0.95rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: var(--site-accent-hover);
+    border-color: var(--site-accent-hover);
+    color: var(--site-on-accent) !important;
+  }
+}
+
+// Only meaningful where the inline embed is suppressed (see media query).
+.cv-hint {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--site-ink-muted);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border: 1px solid var(--site-rule);
+  border-radius: 4px;
+  background: var(--site-surface);
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+// Inline PDF viewing is unreliable on mobile browsers — show the download
+// affordance instead of an empty grey box.
+@media (max-width: 767.98px) {
+  .embed-container {
+    display: none;
+  }
+
+  .cv-hint {
+    display: block;
+  }
+}
+
+// ---------------------------------------------------------------
+// Lists
+// ---------------------------------------------------------------
+main.content ul li {
+  margin-bottom: 0.5rem;
+}
+
+// ---------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------
+.nav-footer {
+  border-top: 1px solid var(--site-rule);
+  font-size: 0.85rem;
+  color: var(--site-ink-muted);
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  margin-top: 3.5rem;
+
+  a {
+    color: var(--site-ink-muted);
+  }
+}
+
+// ---------------------------------------------------------------
+// Responsive
+// ---------------------------------------------------------------
+@media (max-width: 991.98px) {
+  .quarto-about-trestles.quarto-about-trestles {
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    font-size: 17px;
+  }
+
+  main.content h2 {
+    margin-top: 2rem;
+  }
+
+  .paper-links {
+    gap: 0.1rem 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

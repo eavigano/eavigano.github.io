@@ -40,10 +40,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-051849a2a1e0f68eed7367b8dc269a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f1392b9935533de46c88130a29f305ce.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-abd754e18d66aec52ab6d868f179a8a3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f1392b9935533de46c88130a29f305ce.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,62 +78,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-unpublished-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-type','listing-author','listing-date','listing-status',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-type","listing-author","listing-date","listing-status"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-unpublished-papers'] = new List('listing-unpublished-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-forthcoming-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-forthcoming-papers'] = new List('listing-forthcoming-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-published-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -144,6 +92,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-published-papers'] = new List('listing-published-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-unpublished-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-author','listing-date','listing-status',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-author","listing-date","listing-status"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-unpublished-papers'] = new List('listing-unpublished-papers', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -196,10 +172,178 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Research – Edoardo A. Viganò">
+<meta property="og:image" content="https://eavigano.github.io/profile.jpg">
+<meta property="og:site_name" content="Edoardo A. Viganò">
+<meta name="twitter:title" content="Research – Edoardo A. Viganò">
+<meta name="twitter:image" content="https://eavigano.github.io/profile.jpg">
+<meta name="twitter:creator" content="@eavigano">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -223,10 +367,6 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
@@ -235,12 +375,17 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./personal.html"> 
 <span class="menu-text">Personal</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -252,6 +397,7 @@ window.Quarto = {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -272,362 +418,278 @@ window.Quarto = {
 </header>
 
 
-<section id="published-papers" class="level2">
-<h2 class="anchored" data-anchor-id="published-papers">Published papers</h2>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="listing-published-papers" class="quarto-listing quarto-listing-container-custom">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
-<style>
-  .btn-xs {
-    padding: 1px 5px;
-    font-size: 15px;
-  }
-  .ai-lg {
-    font-size: 1.2em;  /* Adjust as needed */
-  }
-</style>
-
-<ul class="list">
+<ul class="paper-list">
   
-    <li data-index="0" data-listing-date-sort="1762988400000">
-      Reduced Incentives, Reduced Party Unity: Evidence from Parliamentary Speeches 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2026. With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani. <strong><em>Party Politics</em></strong>.
-        </small>
-      
-      
-      <br>
+    
+    <li class="paper" data-index="0" data-listing-date-sort="1762988400000">
+
+      <div class="paper-title">Reduced Incentives, Reduced Party Unity: Evidence from Parliamentary Speeches</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With <a href="https://www.francescobromo.com/">Francesco Bromo</a>, Paride Carrara and Paolo Gambacciani</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-journal"><strong><em>Party Politics</em></strong></span>
+          
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-year">2026</span>
+          
+        
+      </div>
 
       
+        <div class="paper-links">
+          
+            
+            <a class="paper-link" href="./papers/pp1.pdf">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://doi.org/10.1177/13540688261427363">
+              <i class="ai ai-closed-access" aria-hidden="true"></i>Published version
+            </a>
+          
+        </div>
       
+
       
-      
-      
-        <a role="button" href="./papers/pp1.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      
-      
-      
-      
-      
-        <a role="button" href="https://doi.org/10.1177/13540688261427363" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="1" data-listing-date-sort="1755468000000">
-      Geographical Representation on the Floor: Parliamentary Rules and Legislative Speeches in Party‑Centred Contexts 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2025. Edoardo A. Viganò. <strong><em>Legislative Studies Quarterly</em></strong>.
-        </small>
-      
-      
-      <br>
+    
+    <li class="paper" data-index="1" data-listing-date-sort="1755468000000">
+
+      <div class="paper-title">Geographical Representation on the Floor: Parliamentary Rules and Legislative Speeches in Party‑Centred Contexts</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">Edoardo A. Viganò</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-journal"><strong><em>Legislative Studies Quarterly</em></strong></span>
+          
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-year">2025</span>
+          
+        
+      </div>
 
       
+        <div class="paper-links">
+          
+            
+            <a class="paper-link" href="./papers/lsq2.pdf">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://onlinelibrary.wiley.com/doi/10.1111/lsq.70032">
+              <i class="ai ai-closed-access" aria-hidden="true"></i>Published version
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://doi.org/10.7910/DVN/D0GFHY">
+              <i class="ai ai-dataverse" aria-hidden="true"></i>Replication data
+            </a>
+          
+        </div>
       
+
       
-      
-      
-        <a role="button" href="./papers/lsq2.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      
-      
-      
-      
-      
-        <a role="button" href="https://onlinelibrary.wiley.com/doi/10.1111/lsq.70032" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-        <a role="button" href="https://doi.org/10.7910/DVN/D0GFHY" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="2" data-listing-date-sort="1746828000000">
-      Political Violence and Anti-System Voting in Interwar Italy 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2025. With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>, Bruno Della Sala, Stefan Stojkovic. <strong><em>Journal of Peace Research</em></strong>.
-        </small>
-      
-      
-      <br>
+    
+    <li class="paper" data-index="2" data-listing-date-sort="1746828000000">
+
+      <div class="paper-title">Political Violence and Anti-System Voting in Interwar Italy</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>, Bruno Della Sala, Stefan Stojkovic</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-journal"><strong><em>Journal of Peace Research</em></strong></span>
+          
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-year">2025</span>
+          
+        
+      </div>
 
       
+        <div class="paper-links">
+          
+            
+            <a class="paper-link" href="./papers/jpr1.pdf">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://journals.sagepub.com/doi/10.1177/00223433251347763">
+              <i class="ai ai-closed-access" aria-hidden="true"></i>Published version
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://cdn.cloud.prio.org/files/a5810729-81dd-499a-9a3c-26070e468f88/ViganoDellaSalaStojkovicBormann_ReplicationFiles.zip">
+              <i class="ai ai-dataverse" aria-hidden="true"></i>Replication data
+            </a>
+          
+        </div>
       
+
       
-      
-      
-        <a role="button" href="./papers/jpr1.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      
-      
-      
-      
-      
-        <a role="button" href="https://journals.sagepub.com/doi/10.1177/00223433251347763" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-        <a role="button" href="https://cdn.cloud.prio.org/files/a5810729-81dd-499a-9a3c-26070e468f88/ViganoDellaSalaStojkovicBormann_ReplicationFiles.zip" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="3" data-listing-date-sort="1744668000000">
-      Introducing the Archive of Interwar Europe Election Data &amp; Assemblies (AIEEDA) 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2025. With <a href="https://leakaftan.eu/">Lea Kaftan</a>, Bruno Della Sala, Olga Jerjomina, Stefan Stojkovic, and <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>. <strong><em>Scientific Data</em></strong>.
-        </small>
-      
-      
-      <br>
+    
+    <li class="paper" data-index="3" data-listing-date-sort="1744668000000">
+
+      <div class="paper-title">Introducing the Archive of Interwar Europe Election Data &amp; Assemblies (AIEEDA)</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With <a href="https://leakaftan.eu/">Lea Kaftan</a>, Bruno Della Sala, Olga Jerjomina, Stefan Stojkovic, and <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a></span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-journal"><strong><em>Scientific Data</em></strong></span>
+          
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-year">2025</span>
+          
+        
+      </div>
 
       
+        <div class="paper-links">
+          
+            
+            <a class="paper-link" href="./papers/sd1.pdf">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://doi.org/10.1038/s41597-025-04969-y">
+              <i class="ai ai-closed-access" aria-hidden="true"></i>Published version
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://osf.io/qs3dg/">
+              <i class="ai ai-dataverse" aria-hidden="true"></i>Replication data
+            </a>
+          
+        </div>
       
+
       
-      
-      
-        <a role="button" href="./papers/sd1.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      
-      
-      
-      
-      
-        <a role="button" href="https://doi.org/10.1038/s41597-025-04969-y" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-        <a role="button" href="https://osf.io/qs3dg/" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="4" data-listing-date-sort="1739574000000">
-      Geographical Representation and Re-Election Prospects in Party-Centred Contexts 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2025. Edoardo A. Viganò. <strong><em>Journal of Elections, Public Opinion and Parties</em></strong>.
-        </small>
-      
-      
-      <br>
+    
+    <li class="paper" data-index="4" data-listing-date-sort="1739574000000">
+
+      <div class="paper-title">Geographical Representation and Re-Election Prospects in Party-Centred Contexts</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">Edoardo A. Viganò</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-journal"><strong><em>Journal of Elections, Public Opinion and Parties</em></strong></span>
+          
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-year">2025</span>
+          
+        
+      </div>
 
       
+        <div class="paper-links">
+          
+            
+            <a class="paper-link" href="./papers/jepop1.pdf">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://doi.org/10.1080/17457289.2024.2443679">
+              <i class="ai ai-closed-access" aria-hidden="true"></i>Published version
+            </a>
+          
+        </div>
       
+
       
-      
-      
-        <a role="button" href="./papers/jepop1.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      
-      
-      
-      
-      
-        <a role="button" href="https://doi.org/10.1080/17457289.2024.2443679" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="5" data-listing-date-sort="1678662000000">
-      Electoral Incentives and Geographical Representation: Evidence from Italy 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2024. Edoardo A. Viganò. <strong><em>Legislative Studies Quarterly</em></strong>.
-        </small>
-      
-      
-      <br>
+    
+    <li class="paper" data-index="5" data-listing-date-sort="1678662000000">
+
+      <div class="paper-title">Electoral Incentives and Geographical Representation: Evidence from Italy</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">Edoardo A. Viganò</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-journal"><strong><em>Legislative Studies Quarterly</em></strong></span>
+          
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-year">2024</span>
+          
+        
+      </div>
 
       
+        <div class="paper-links">
+          
+            
+            <a class="paper-link" href="./papers/lsq1.pdf">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://doi.org/10.1111/lsq.12418">
+              <i class="ai ai-closed-access" aria-hidden="true"></i>Published version
+            </a>
+          
+            <span class="paper-link-sep">·</span>
+            <a class="paper-link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX">
+              <i class="ai ai-dataverse" aria-hidden="true"></i>Replication data
+            </a>
+          
+        </div>
       
+
       
-      
-      
-        <a role="button" href="./papers/lsq1.pdf" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      
-      
-      
-      
-      
-        <a role="button" href="https://doi.org/10.1111/lsq.12418" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-        <a role="button" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SEKTZX" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
-        </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
 </ul>
 
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<!--
+## Forthcoming
+
+::: {#forthcoming-papers}
+:::
+-->
 </section>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
@@ -635,331 +697,132 @@ window.Quarto = {
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
-<style>
-  .btn-xs {
-    padding: 1px 5px;
-    font-size: 15px;
-  }
-  .ai-lg {
-    font-size: 1.2em;  /* Adjust as needed */
-  }
-</style>
-
-<ul class="list">
+<ul class="paper-list">
   
-    <li data-index="0" data-listing-date-sort="1762988400000">
-      Close to Home: The Impact of Local Politicians on Turnout 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 13, 2025. Edoardo A. Viganò. <span style="font-weight: bold;">Under review</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
+    
+    <li class="paper" data-index="0" data-listing-date-sort="1762988400000">
+
+      <div class="paper-title">Close to Home: The Impact of Local Politicians on Turnout</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">Edoardo A. Viganò</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-status"><span style="font-weight: bold;">Under review</span></span>
+          
+        
+      </div>
 
       
+
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="1" data-listing-date-sort="1762988400000">
-      Historical Conflict Event Data Collection via Large Language Models (LLMs) 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 13, 2025. With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a> and Martin Grauduszus. <span style="font-weight: bold;">Working paper</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
+    
+    <li class="paper" data-index="1" data-listing-date-sort="1762902000000">
+
+      <div class="paper-title">Political Violence and Anti-System Voting in Weimar Germany</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a></span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-status"><span style="font-weight: bold;">Under review</span></span>
+          
+        
+      </div>
 
       
+
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="2" data-listing-date-sort="1762902000000">
-      Political Violence and Anti-System Voting in the Weimar Republic 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 12, 2025. With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>. <span style="font-weight: bold;">In progress</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
+    
+    <li class="paper" data-index="2" data-listing-date-sort="1762210800000">
+
+      <div class="paper-title">Women’s Speeches in Legislative Committees: A Feminist Institutionalist Explanation</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With Paolo Gambacciani</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-status"><span style="font-weight: bold;">Under review</span></span>
+          
+        
+      </div>
 
       
+
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="3" data-listing-date-sort="1762815600000">
-      A Woman From Here: Gender, Local Roots, and Voter Mobilisation 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 11, 2025. Edoardo A. Viganò. <span style="font-weight: bold;">In progress</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
+    
+    <li class="paper" data-index="3" data-listing-date-sort="1762124400000">
+
+      <div class="paper-title">The Urban-Rural Divide in Populist Rhetoric</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With <a href="https://davidycliao.github.io/">Yen-Chieh Liao</a></span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-status"><span style="font-weight: bold;">In progress</span></span>
+          
+        
+      </div>
 
       
+
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="4" data-listing-date-sort="1762729200000">
-      The Urban-Rural Divide in Populist Rhetoric 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 10, 2025. With <a href="https://davidycliao.github.io/">Yen-Chieh Liao</a>. <span style="font-weight: bold;">In progress</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
+    
+    <li class="paper" data-index="4" data-listing-date-sort="1760306400000">
+
+      <div class="paper-title">Historical Conflict Event Data Collection via Large Language Models (LLMs)</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a> and Martin Grauduszus</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-status"><span style="font-weight: bold;">Working paper</span></span>
+          
+        
+      </div>
 
       
+
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
-    <li data-index="5" data-listing-date-sort="1762210800000">
-      Who Speaks in Committees? Legislative Speech beyond the Floor 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 4, 2025. With Paolo Gambacciani. <span style="font-weight: bold;">In progress</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
+    
+    <li class="paper" data-index="5" data-listing-date-sort="1759528800000">
+
+      <div class="paper-title">Artificial Intelligence and Parliaments: Rethinking the Relationship between Representation and Participation</div>
+
+      <div class="paper-meta">
+        <span class="paper-authors">With Paolo Gambacciani</span>
+        
+          
+            <span class="paper-link-sep">·</span>
+            <span class="paper-status"><span style="font-weight: bold;">In progress</span></span>
+          
+        
+      </div>
 
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
-    </li>
-  
-    <li data-index="6" data-listing-date-sort="1762210800000">
-      Artificial Intelligence and Parliaments: Rethinking the Relationship between Representation and Participation 
-      <br>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      
-        <small class="text-muted">
-          Nov 4, 2025. With Paolo Gambacciani. <span style="font-weight: bold;">In progress</span>.
-        </small>
-      
-      
-      <!-- paper info for published papers -->
-      
-      
-      <br>
 
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      </p>
-      <hr>
+
     </li>
   
 </ul>
@@ -971,28 +834,22 @@ window.Quarto = {
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-custom" id="listing-forthcoming-papers">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
-
-<style>
-  .btn-xs {
-    padding: 1px 5px;
-    font-size: 15px;
-  }
-  .ai-lg {
-    font-size: 1.2em;  /* Adjust as needed */
-  }
-</style>
-
-<ul class="list">
-  
-</ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1064,7 +921,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/eavigano\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1078,6 +935,11 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1392,6 +1254,19 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Edoardo A. Viganò</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 

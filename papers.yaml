@@ -67,10 +67,6 @@ Evidence from Parliamentary Speeches"
   journal: "<strong><em>Party Politics</em></strong>"
 
 
-# Under review
-
-
-
 # Working papers
 - title: "Close to Home: The Impact of Local Politicians on Turnout"
   type: "Working"
@@ -79,52 +75,49 @@ Evidence from Parliamentary Speeches"
   date: 2025-11-13
   status: '<span style="font-weight: bold;">Under review</span>'
   
-- title: "Historical Conflict Event Data Collection via Large Language Models (LLMs)"
-  type: "Working"
-  author:
-    - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a> and Martin Grauduszus
-  date: 2025-11-13
-  status: '<span style="font-weight: bold;">Working paper</span>'
-
-# Worling papers
-
-- title: "Political Violence and Anti-System Voting in the Weimar Republic"
+- title: "Political Violence and Anti-System Voting in Weimar Germany"
   type: "Working"
   author:
     - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a>
   date: 2025-11-12
-  status: '<span style="font-weight: bold;">In progress</span>'
+  status: '<span style="font-weight: bold;">Under review</span>'
   
-- title: "Who Speaks in Committees? Legislative Speech beyond the Floor"
+- title: "Women’s Speeches in Legislative Committees: A Feminist Institutionalist Explanation"
   type: "Working"
   author:
     - With Paolo Gambacciani
   date: 2025-11-04
-  status: '<span style="font-weight: bold;">In progress</span>'
+  status: '<span style="font-weight: bold;">Under review</span>'
   
-  
-- title: "Artificial Intelligence and Parliaments: Rethinking the Relationship between Representation and Participation"
-  type: "Working"
-  author:
-    - With Paolo Gambacciani
-  date: 2025-11-04
-  status: '<span style="font-weight: bold;">In progress</span>'
-
-
 - title: "The Urban-Rural Divide in Populist Rhetoric"
   type: "Working"
   author:
     - With <a href="https://davidycliao.github.io/">Yen-Chieh Liao</a>
-  date: 2025-11-10
+  date: 2025-11-03
   status: '<span style="font-weight: bold;">In progress</span>'
   
-
-- title: "A Woman From Here: Gender, Local Roots, and Voter Mobilisation"
+- title: "Historical Conflict Event Data Collection via Large Language Models (LLMs)"
   type: "Working"
   author:
-    - Edoardo A. Viganò
-  date: 2025-11-11
+    - With <a href="https://ncbormann.github.io/">Nils-Christian Bormann</a> and Martin Grauduszus
+  date: 2025-10-13
+  status: '<span style="font-weight: bold;">Working paper</span>'
+  
+
+- title: "Artificial Intelligence and Parliaments: Rethinking the Relationship between Representation and Participation"
+  type: "Working"
+  author:
+    - With Paolo Gambacciani
+  date: 2025-10-04
   status: '<span style="font-weight: bold;">In progress</span>'
+
+
+# - title: "A Woman From Here: Gender, Local Roots, and Voter Mobilisation"
+#   type: "Working"
+#   author:
+#     - Edoardo A. Viganò
+#   date: 2025-11-11
+#   status: '<span style="font-weight: bold;">In progress</span>'
 
 
 # - title: "Electoral Incentives and Spatial Concentration in Legislative Activities"

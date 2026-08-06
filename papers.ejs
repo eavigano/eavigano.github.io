@@ -2,117 +2,64 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
-<style>
-  .btn-xs {
-    padding: 1px 5px;
-    font-size: 15px;
-  }
-  .ai-lg {
-    font-size: 1.2em;  /* Adjust as needed */
-  }
-</style>
-
-<ul class="list">
+<ul class="paper-list">
   <% for (const item of items) { %>
-    <li <%= metadataAttrs(item) %>>
-      <%= item.title %> 
-      <br/>
-      <p>
-      <!-- paper info for not-yet-published papers -->
-      <% if (item.type !== 'Published') { %>
-        <small class="text-muted">
-          <%= item.date %>. <%= item.author %>. <%= item.status %>.
-        </small>
-      <% } %>
-      
-      <!-- paper info for published papers -->
-      <% if (item.type === 'Published') { %>
-        <small class="text-muted">
-          <%= item.year %>. <%= item.author %>. <%= item.journal %>.
-        </small>
-      <% } %>
-      
-      <br/>
+    <%
+      // Resource links, most useful first. Each entry renders only if the
+      // corresponding key is present in papers.yaml.
+      const resources = [];
+      if (item.pdf)       resources.push({ href: item.pdf,       icon: 'bi bi-file-earmark-pdf',   label: 'PDF' });
+      if (item.pubopen)   resources.push({ href: item.pubopen,   icon: 'ai ai-open-access',        label: 'Open access' });
+      if (item.pubclosed) resources.push({ href: item.pubclosed, icon: 'ai ai-closed-access',      label: 'Published version' });
+      if (item.preprint)  resources.push({ href: item.preprint,  icon: 'ai ai-doi',                label: 'Preprint' });
+      if (item.appendix)  resources.push({ href: item.appendix,  icon: 'bi bi-file-earmark-plus',  label: 'Appendix' });
+      if (item.dataverse) resources.push({ href: item.dataverse, icon: 'ai ai-dataverse',          label: 'Replication data' });
+      if (item.osf)       resources.push({ href: item.osf,       icon: 'ai ai-osf',                label: 'OSF' });
+      if (item.github)    resources.push({ href: item.github,    icon: 'bi bi-github',             label: 'Code' });
+      if (item.prereg)    resources.push({ href: item.prereg,    icon: 'ai ai-preregistered',      label: 'Pre-registration' });
+      if (item.website)   resources.push({ href: item.website,   icon: 'bi bi-box-arrow-up-right', label: 'Project website' });
+      if (item.errata)    resources.push({ href: item.errata,    icon: 'bi bi-exclamation-diamond', label: 'Errata' });
+    %>
+    <li class="paper" <%= metadataAttrs(item) %>>
 
-      <% if (item.errata) { %>
-        <a role="button" href="<%= item.errata %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-exclamation-diamond ai-lg"></i> Errata
-        </a> 
+      <div class="paper-title"><%= item.title %></div>
+
+      <div class="paper-meta">
+        <% if (item.author) { %><span class="paper-authors"><%= item.author %></span><% } %>
+        <% if (item.type === 'Published') { %>
+          <% if (item.journal) { %>
+            <span class="paper-link-sep">&middot;</span>
+            <span class="paper-journal"><%= item.journal %></span>
+          <% } %>
+          <% if (item.year) { %>
+            <span class="paper-link-sep">&middot;</span>
+            <span class="paper-year"><%= item.year %></span>
+          <% } %>
+        <% } else { %>
+          <% if (item.status) { %>
+            <span class="paper-link-sep">&middot;</span>
+            <span class="paper-status"><%= item.status %></span>
+          <% } %>
+        <% } %>
+      </div>
+
+      <% if (resources.length) { %>
+        <div class="paper-links">
+          <% resources.forEach(function (res, i) { %>
+            <% if (i > 0) { %><span class="paper-link-sep">&middot;</span><% } %>
+            <a class="paper-link" href="<%= res.href %>">
+              <i class="<%= res.icon %>" aria-hidden="true"></i><%= res.label %>
+            </a>
+          <% }); %>
+        </div>
       <% } %>
-      
-      <% if (item.website) { %>
-        <a role="button" href="<%= item.website %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-filetype-html ai-lg"></i> Project Website
-        </a>
-      <% } %>
-      
-      <% if (item.pdf) { %>
-        <a role="button" href="<%= item.pdf %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      <% } %>
-      
-      <% if (item.pubopen) { %>
-        <a role="button" href="<%= item.pubopen %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-open-access ai-lg"></i> Open Access
-        </a>
-      <% } %>
-      
-      <% if (item.pubclosed) { %>
-        <a role="button" href="<%= item.pubclosed %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
-        </a>
-      <% } %>
-      
-      <% if (item.preprint) { %>
-        <a role="button" href="<%= item.preprint %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-doi ai-lg"></i> Preprint 
-        </a> 
-      <% } %>
-      
-      <% if (item.appendix) { %>
-        <a role="button" href="<%= item.appendix %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-plus ai-lg"></i> Appendix 
-        </a>
-      <% } %>
-      
-      <% if (item.dataverse) { %>
-        <a role="button" href="<%= item.dataverse %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
-        </a>
-      <% } %>
-      
-      <% if (item.osf) { %>
-        <a role="button" href="<%= item.osf %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-osf ai-lg"></i> OSF
-        </a>
-      <% } %>
-      
-      <% if (item.github) { %>
-        <a role="button" href="<%= item.github %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-github ai-lg"></i> GitHub 
-        </a>
-      <% } %>
-      
-      <% if (item.prereg) { %>
-        <a role="button" href="<%= item.prereg %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="ai ai-preregistered ai-lg"></i> Preregistration 
-        </a> 
-      <% } %>
-      
-      <br/>
-      
+
       <% if (item.note) { %>
-        <small class="text-secondary">
-          <span class="note"><%= item.note %></span>    
-        </small>
+        <div class="paper-note"><%= item.note %></div>
       <% } %>
-      </p>
-      <hr>
+
     </li>
   <% } %>
 </ul>
 
 ```
-
-

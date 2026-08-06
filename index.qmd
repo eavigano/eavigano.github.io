@@ -1,49 +1,43 @@
 ---
 title: "Edoardo Alberto Viganò"
-#subtitle: "Postdoctoral researcher in political science"
 
 about:
   id: main-part
   template: trestles
   image: profile.jpg
   image-shape: round
-  image-width: 17em
+  image-width: 15em
   links:
     - icon: envelope
       text: Email
       href: "mailto:eaviganoac@gmail.com"
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/eavigano
-    - icon: "<i class='fa fa-bsky-icon'></i>"
-      text: Bluesky
-      href: https://bsky.app/profile/eavigano.bsky.social
-    # - icon: github
-    #   text: Github
-    #   href: https://github.com/eavigano
-    - icon: book
+    - icon: mortarboard
       text: Scholar
       href: https://scholar.google.it/citations?user=Bx2za7MAAAAJ&hl=da&oi=ao
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/eavigano.bsky.social
     - icon: linkedin
-      text: Linkedin
+      text: LinkedIn
       href: https://www.linkedin.com/in/eavigano/
+    - icon: twitter-x
+      text: Twitter
+      href: https://twitter.com/eavigano
+
+# Commented out together with the "Selected publications" section in the body.
+# Re-enable both at once: a listing declared here with no matching
+# ::: {#selected-papers} div in the body renders nowhere.
+# listing:
+#   - id: selected-papers
+#     contents: papers.yaml
+#     include:
+#       type: "Published"
+#     template: papers.ejs
+#     max-items: 3
+#     sort: "date desc"
+#     filter-ui: false
+#     sort-ui: false
 ---
-
-<!-- Google tag (gtag.js) -->
-
-```{=html}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V76XCX9MG0"></script>
-```
-
-```{=html}
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V76XCX9MG0');
-</script>
-```
 
 ::: {#main-part}
 Welcome! I am a visiting professor in quantitative methods at the Department of Social Sciences at the University Carlos III of Madrid. Previously, I was a postdoctoral researcher at Witten/Herdecke University and a PhD candidate at Aarhus University.
@@ -52,17 +46,16 @@ My research interests include representation, electoral systems, party politics,
 
 You can contact me at [eaviganoac\@gmail.com](mailto:eaviganoac@gmail.com). My CV can be downloaded [here](cv.pdf).
 
-## Education
-
-**PhD in Political Science** <br> *Aarhus University* <br> 2024
-
-**MSc in Economics and Political Science** <br> *University of Milan* <br> 2019
-
-**BA in Political Sciences** <br> *University of Milan* <br> 2017
+<!-- ## Education -->
+<!-- <ul class="education-list"> -->
+<!--   <li><span class="degree">PhD in Political Science</span>, <span class="institution">Aarhus University</span> <span class="year">2024</span></li> -->
+<!--   <li><span class="degree">MSc in Economics and Political Science</span>, <span class="institution">University of Milan</span> <span class="year">2019</span></li> -->
+<!--   <li><span class="degree">BA in Political Sciences</span>, <span class="institution">University of Milan</span> <span class="year">2017</span></li> -->
+<!-- </ul> -->
 :::
 
-<!-- ## Publications -->
+<!-- ## Selected publications -->
+<!-- ::: {#selected-papers} -->
+<!-- ::: -->
+<!-- [All publications and working papers →](research.qmd){.more-link} -->
 
-<!-- **Viganò**, E.A. (2024) "Geographical Representation and Re-Election Prospects in Party-Centred Contexts". Accepted at *Journal of Elections, Public Opinion and Parties*. -->
-
-<!-- **Viganò**, E.A. (2023) "Electoral Incentives and Geographical Representation: Evidence from an Italian Electoral Reform". *Legislative Studies Quarterly* \| [Paper](https://onlinelibrary.wiley.com/doi/full/10.1111/lsq.12418). -->

@@ -4,27 +4,37 @@ project:
 
 website:
   title: "Edoardo A. Viganò"
+  site-url: "https://eavigano.github.io"
+  description: "Edoardo A. Viganò — political scientist working on representation, electoral systems, party politics, and political violence."
+  favicon: icon.png
+  google-analytics: "G-V76XCX9MG0"
+  open-graph: true
+  twitter-card:
+    creator: "@eavigano"
+    card-style: summary
+  image: profile.jpg
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: cv.qmd
-        text: CV
       - href: research.qmd
         text: Research
       - href: teaching.qmd
         text: Teaching
+      - href: cv.qmd
+        text: CV
       - href: personal.qmd
         text: Personal
-    website:
-  google-analytics: "G-V76XCX9MG0"
-  favicon: icon.png
+  page-footer:
+    left: "© 2026 Edoardo A. Viganò"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme: lumen
-    css: styles.css
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme.scss, theme-dark.scss]
     toc: true
+    link-external-newwindow: true
 
 editor: visual
-

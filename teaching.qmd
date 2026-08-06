@@ -1,20 +1,22 @@
 ---
 title: "Teaching"
-execute:
-  freeze: true  # never re-render during project render
-engine: knitr 
+toc: false
 resources:
   - "teaching/electoral_systems.pdf"
-cv:
-  pdf: "teaching/electoral_systems.pdf"
 ---
 
-I have experience teaching courses both at the bachelor and master's level at Aarhus University, Heinrich Heine University, and the University of Milan.
+I have experience teaching courses both at the bachelor and master's level at Aarhus University, Heinrich Heine University, University of Milan, and University Carlos III of Madrid.
 
--   [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (MA course, Aarhus; course convenor and lecturer). [Syllabus](teaching/electoral_systems.pdf).
+-   Research methods (BA course, Madrid; course convenor and lecturer), 2025/2026.
 
--   Electoral Systems and Representation (BA course, HHU; course convenor and lecturer).
+-   Public Policy Evaluation (BA course, Madrid; lecturer), 2025/2026.
 
--   Positive Political Theory (MSc course, Milan; teaching assistant).
+-   Political Analysis (BA course, Madrid; course convenor and lecturer), 2025/2026.
 
--   [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (Aarhus, teaching assistant)
+-   Positive Political Theory (MSc course, Milan; teaching assistant), 2024/2025.
+
+-   Electoral Systems and Representation (BA course, HHU; course convenor and lecturer), 2024/2025.
+
+-   [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (MA course, Aarhus; course convenor and lecturer), 2022/2023. [Syllabus](teaching/electoral_systems.pdf).
+
+-   [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (Aarhus, teaching assistant), 2021/2022

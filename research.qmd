@@ -1,46 +1,52 @@
 ---
 title: "Research"
-description: "" 
+description: ""
 listing:
+  - id: published-papers
+    include:
+      type: "Published"
+    contents: papers.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
   - id: unpublished-papers
-    include: 
+    include:
       type: "Working"
     contents: papers.yaml
     template: papers.ejs
     filter-ui: false
     sort: "date desc"
     sort-ui: false
-    #categories: true
-  - id: forthcoming-papers
-    include: 
-      type: "Forthcoming"
-    contents: papers.yaml
-    template: papers.ejs
-    filter-ui: false
-    sort: "date desc"
-    sort-ui: false
-    #categories: true  
-  - id: published-papers
-    include: 
-      type: "Published"
-    contents: papers.yaml
-    template: papers.ejs
-    #filter-ui: true
-    sort: "date desc" 
-    sort-ui: false
-    #categories: true
-toc: false    
-#page-layout: full
+  # To add a "Forthcoming" section, uncomment the listing below *and* the
+  # matching heading + ::: {#forthcoming-papers} div in the body. A listing
+  # declared here without a matching div in the body renders nowhere, so
+  # papers marked `type: "Forthcoming"` would silently disappear.
+  #
+  # - id: forthcoming-papers
+  #   include:
+  #     type: "Forthcoming"
+  #   contents: papers.yaml
+  #   template: papers.ejs
+  #   filter-ui: false
+  #   sort: "date desc"
+  #   sort-ui: false
+toc: false
 ---
 
-## Published papers
+## Publications
 
 ::: {#published-papers}
 :::
+
+<!--
+## Forthcoming
+
+::: {#forthcoming-papers}
+:::
+-->
 
 ## Working papers
 
 ::: {#unpublished-papers}
 :::
-
-

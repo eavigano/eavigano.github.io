@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+
+// Layered on top of theme.scss for the dark bundle. Quarto gives later
+// files' `!default` assignments precedence, so redefining the palette here
+// re-derives the Bootstrap chrome (page background, navbar, footer, default
+// link colour) that Bootstrap generates from these variables.
+//
+// Deliberately no `scss:rules` section: every hand-written rule in
+// theme.scss resolves its colours through the `--site-*` custom properties,
+// which are already scoped to `body.quarto-dark` there. Restating those
+// rules here is what previously caused one scheme's colours to leak into
+// the other, since Quarto keeps both compiled bundles live in the page.
+
+$ink:       #dde2e6;
+$ink-muted: #98a2ac;
+$ink-faint: #79838d;
+$accent:    #7cc0d6;
+$rule:      #2b3138;
+$surface:   #1e2227;
+
+$body-bg:    #171a1d;
+$body-color: $ink;
+
+$link-color:       $accent;
+$link-hover-color: #a9dcec;
+
+$headings-color: $ink;
+
+$navbar-bg: #171a1d;
+$navbar-fg: $ink-muted;
+$navbar-hl: $accent;
+
+$footer-bg: #171a1d;
+$footer-fg: $ink-muted;
