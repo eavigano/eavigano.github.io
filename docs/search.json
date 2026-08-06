@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Edoardo Alberto Viganò",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     Scholar\n  \n  \n    \n     Bluesky\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Twitter\n  \n\n  \n  \nWelcome! I am a visiting professor in quantitative methods at the Department of Social Sciences at the University Carlos III of Madrid. Previously, I was a postdoctoral researcher at Witten/Herdecke University and a PhD candidate at Aarhus University.\nMy research interests include representation, electoral systems, party politics, and political violence. Methodologically, I am interested in causal inference and quantitative text analysis. \nYou can contact me at eaviganoac@gmail.com. My CV can be downloaded here."
+  },
+  {
     "objectID": "teaching.html",
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
     "text": "I have experience teaching courses both at the bachelor and master’s level at Aarhus University, Heinrich Heine University, University of Milan, and University Carlos III of Madrid.\n\nResearch methods (BA course, Madrid; course convenor and lecturer), 2025/2026.\nPublic Policy Evaluation (BA course, Madrid; lecturer), 2025/2026.\nPolitical Analysis (BA course, Madrid; course convenor and lecturer), 2025/2026.\nPositive Political Theory (MSc course, Milan; teaching assistant), 2024/2025.\nElectoral Systems and Representation (BA course, HHU; course convenor and lecturer), 2024/2025.\nElectoral Systems: Do They Really Matter? (MA course, Aarhus; course convenor and lecturer), 2022/2023. Syllabus.\nPolitical Institutions: Western Countries, EU, and Foreign Policy (Aarhus, teaching assistant), 2021/2022"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "projects",
+    "section": "",
+    "text": "Projects that will never happen"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download PDF\nMost browsers on phones and tablets cannot display PDFs inline — use the download button."
   },
   {
     "objectID": "personal.html",
@@ -26,20 +47,6 @@
     "title": "Personal",
     "section": "Football",
     "text": "Football\nI’m an Inter Milan and Virtus Entella supporter."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum vitae",
-    "section": "",
-    "text": "Download PDF\nMost browsers on phones and tablets cannot display PDFs inline — use the download button."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Edoardo Alberto Viganò",
-    "section": "",
-    "text": "Email\n  \n  \n    \n     Scholar\n  \n  \n    \n     Bluesky\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Twitter\n  \n\n  \n  \nWelcome! I am a visiting professor in quantitative methods at the Department of Social Sciences at the University Carlos III of Madrid. Previously, I was a postdoctoral researcher at Witten/Herdecke University and a PhD candidate at Aarhus University.\nMy research interests include representation, electoral systems, party politics, and political violence. Methodologically, I am interested in causal inference and quantitative text analysis. \nYou can contact me at eaviganoac@gmail.com. My CV can be downloaded here."
   },
   {
     "objectID": "research.html",

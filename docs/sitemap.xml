@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://eavigano.github.io/index.html</loc>
+    <lastmod>2026-08-06T13:56:59.548Z</lastmod>
+  </url>
+  <url>
     <loc>https://eavigano.github.io/teaching.html</loc>
     <lastmod>2026-08-06T15:00:49.273Z</lastmod>
   </url>
   <url>
-    <loc>https://eavigano.github.io/personal.html</loc>
-    <lastmod>2024-02-21T17:17:24.000Z</lastmod>
+    <loc>https://eavigano.github.io/projects.html</loc>
+    <lastmod>2023-07-04T11:50:00.000Z</lastmod>
   </url>
   <url>
     <loc>https://eavigano.github.io/cv.html</loc>
     <lastmod>2026-08-06T08:40:25.711Z</lastmod>
   </url>
   <url>
-    <loc>https://eavigano.github.io/index.html</loc>
-    <lastmod>2026-08-06T13:56:59.548Z</lastmod>
+    <loc>https://eavigano.github.io/personal.html</loc>
+    <lastmod>2024-02-21T17:17:24.000Z</lastmod>
   </url>
   <url>
     <loc>https://eavigano.github.io/research.html</loc>
