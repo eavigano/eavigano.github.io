@@ -47,15 +47,22 @@ My research interests include representation, electoral systems, party politics,
 You can contact me at [eaviganoac\@gmail.com](mailto:eaviganoac@gmail.com). My CV can be downloaded [here](cv.pdf).
 
 <!-- ## Education -->
+
 <!-- <ul class="education-list"> -->
+
 <!--   <li><span class="degree">PhD in Political Science</span>, <span class="institution">Aarhus University</span> <span class="year">2024</span></li> -->
+
 <!--   <li><span class="degree">MSc in Economics and Political Science</span>, <span class="institution">University of Milan</span> <span class="year">2019</span></li> -->
+
 <!--   <li><span class="degree">BA in Political Sciences</span>, <span class="institution">University of Milan</span> <span class="year">2017</span></li> -->
+
 <!-- </ul> -->
 :::
 
 <!-- ## Selected publications -->
-<!-- ::: {#selected-papers} -->
-<!-- ::: -->
-<!-- [All publications and working papers →](research.qmd){.more-link} -->
 
+<!-- ::: {#selected-papers} -->
+
+<!-- ::: -->
+
+<!-- [All publications and working papers →](research.qmd){.more-link} -->
