@@ -5,7 +5,7 @@ resources:
   - "teaching/electoral_systems.pdf"
 ---
 
-I have taught research methods, political analysis, and electoral institutions at undergraduate and postgraduate level, including as course convenor at three universities.
+I have taught comparative politics, political institutions, political analysis, and research methods at undergraduate and postgraduate level at four universities.
 
 <!--
 Courses reuse the publications-list styling (.paper-*) from theme.scss.
