@@ -65,4 +65,4 @@ You can contact me at [eaviganoac\@gmail.com](mailto:eaviganoac@gmail.com). My C
 
 <!-- ::: -->
 
-<!-- [All publications and working papers →](research.qmd){.more-link} -->
+<!-- [All publications and ongoing research →](research.qmd){.more-link} -->

@@ -487,6 +487,15 @@ div.quarto-about-trestles .about-entity .about-links.about-links {
   color: var(--site-ink-muted);
 }
 
+// Year beside an institution heading on the Teaching page.
+.heading-year {
+  margin-left: 0.4rem;
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--site-ink-muted);
+}
+
 // "All publications →" style jump link.
 .more-link {
   display: inline-block;

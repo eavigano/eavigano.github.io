@@ -5,18 +5,70 @@ resources:
   - "teaching/electoral_systems.pdf"
 ---
 
-I have experience teaching courses both at the bachelor and master's level at Aarhus University, Heinrich Heine University, University of Milan, and University Carlos III of Madrid.
+I have taught research methods, political analysis, and electoral institutions at undergraduate and postgraduate level, including as course convenor at three universities.
 
--   Research methods (BA course, Madrid; course convenor and lecturer), 2025/2026.
+<!--
+Courses reuse the publications-list styling (.paper-*) from theme.scss.
+Keep the order: newest institution first; within an institution,
+courses as convenor before courses as lecturer or teaching assistant.
+-->
 
--   Public Policy Evaluation (BA course, Madrid; lecturer), 2025/2026.
+## University Carlos III of Madrid <span class="heading-year">2026</span>
 
--   Political Analysis (BA course, Madrid; course convenor and lecturer), 2025/2026.
+<ul class="paper-list">
+<li class="paper">
+<div class="paper-title">Cases in International Studies (Research Methods)</div>
+<div class="paper-meta">Undergraduate <span class="paper-link-sep">&middot;</span> Convenor and lecturer</div>
+</li>
+<li class="paper">
+<div class="paper-title">Political Analysis</div>
+<div class="paper-meta">Undergraduate <span class="paper-link-sep">&middot;</span> Convenor and lecturer</div>
+</li>
+<li class="paper">
+<div class="paper-title">Globalisation</div>
+<div class="paper-meta">Undergraduate <span class="paper-link-sep">&middot;</span> Lecturer</div>
+</li>
+<li class="paper">
+<div class="paper-title">Public Policy Evaluation</div>
+<div class="paper-meta">Undergraduate <span class="paper-link-sep">&middot;</span> Lecturer</div>
+</li>
+</ul>
 
--   Positive Political Theory (MSc course, Milan; teaching assistant), 2024/2025.
+## University of Milan <span class="heading-year">2025</span>
 
--   Electoral Systems and Representation (BA course, HHU; course convenor and lecturer), 2024/2025.
+<ul class="paper-list">
+<li class="paper">
+<div class="paper-title">Positive Political Theory</div>
+<div class="paper-meta">Postgraduate <span class="paper-link-sep">&middot;</span> Lecturer</div>
+</li>
+</ul>
 
--   [Electoral Systems: Do They Really Matter?](https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter) (MA course, Aarhus; course convenor and lecturer), 2022/2023. [Syllabus](teaching/electoral_systems.pdf).
+## Heinrich Heine University Düsseldorf <span class="heading-year">2024</span>
 
--   [Political Institutions: Western Countries, EU, and Foreign Policy](https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy) (Aarhus, teaching assistant), 2021/2022
+<ul class="paper-list">
+<li class="paper">
+<div class="paper-title">Electoral Systems and Representation</div>
+<div class="paper-meta">Undergraduate <span class="paper-link-sep">&middot;</span> Convenor and lecturer</div>
+</li>
+</ul>
+
+## Aarhus University <span class="heading-year">2022</span>
+
+<ul class="paper-list">
+<li class="paper">
+<div class="paper-title">Electoral Systems: Do They Really Matter?</div>
+<div class="paper-meta">Postgraduate <span class="paper-link-sep">&middot;</span> Convenor and lecturer</div>
+<div class="paper-links">
+<a class="paper-link" href="https://kursuskatalog.au.dk/en/course/113493/223E22-Electoral-Systems-Do-They-Really-Matter"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>Course page</a>
+<span class="paper-link-sep">&middot;</span>
+<a class="paper-link" href="teaching/electoral_systems.pdf"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Syllabus</a>
+</div>
+</li>
+<li class="paper">
+<div class="paper-title">Political Institutions: Western Countries, EU, and Foreign Policy</div>
+<div class="paper-meta">Undergraduate <span class="paper-link-sep">&middot;</span> Teaching assistant</div>
+<div class="paper-links">
+<a class="paper-link" href="https://kursuskatalog.au.dk/en/course/110302/Political-Institutions-Western-Countries-EU-and-Foreign-Policy"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>Course page</a>
+</div>
+</li>
+</ul>
